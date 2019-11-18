@@ -1,3 +1,5 @@
+// Technical 5th step handled in createPdf where all the information passed along the function path is used to fill in content details.
+
 const colors = {
   green: {
     wrapperBackground: "#E6E1C3",
@@ -225,5 +227,5 @@ function generateHTML(data, gitHubInfo) {
 }
 
 
-exports.colors = colors
-exports.generateHTML = generateHTML
+exports.colors = colors;
+exports.generateHTML = generateHTML;
