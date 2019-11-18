@@ -28,7 +28,7 @@ const colors = {
 };
 
 
-function generateHTML(data, gitHubInfo) {
+function generatePdfContent(data, gitHubInfo) {
   return `<!DOCTYPE html>
   <html lang="en">
   <head>
@@ -105,7 +105,7 @@ function generateHTML(data, gitHubInfo) {
         width: 95%;
         border-radius: 6px;
         }
-        .photo-header img {
+        .photo-header > img {
         width: 250px;
         height: 250px;
         border-radius: 50%;
@@ -189,9 +189,9 @@ function generateHTML(data, gitHubInfo) {
      <h1>My name is ${gitHubInfo.name}</h1>
      
      <div class="links-nav">
-       <a href="https://www.google.com/maps/place/${gitHubInfo.location}">Location</a>
-       <a href="https://github.com/andydurette">GitHub</a>
-       <a href="https://github.com/andydurette">Blog</a>
+     <a href="https://www.google.com/maps/place/${gitHubInfo.location}">Location</a>
+     <a href="${gitHubInfo.html_url}">GitHub</a>
+     <a href="${gitHubInfo.blog}">Blog</a>
      </div>
    </div>
    <div class="row">
@@ -228,4 +228,4 @@ function generateHTML(data, gitHubInfo) {
 
 
 exports.colors = colors;
-exports.generateHTML = generateHTML;
+exports.generatePdfContent = generatePdfContent;
