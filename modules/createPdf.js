@@ -11,6 +11,7 @@ const createPdf = async (answers, gitHubInfo) => {
 };
   // Awaits content from the generatePdfContent
   await page.setContent(generatePdfContent(answers.color, gitHubInfo ));
+  await page.screenshot({ path: 'screenshot/output.png' });
   await page.pdf(options);
   await browser.close();
 }
