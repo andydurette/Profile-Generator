@@ -195,6 +195,7 @@ function generatePdfContent(data, gitHubInfo) {
    <div class="photo-header">
      <img src="${gitHubInfo.avatar_url}" alt="${gitHubInfo.name}">
      <h1>My name is ${gitHubInfo.name}</h1>
+     <h4>Currently @ ${gitHubInfo.company}</h4>
      
      <div class="links-nav">
      <div><i class="fas fa-map-marker"></i><a href="https://www.google.com/maps/place/${gitHubInfo.location}">Location</a> </div>
@@ -205,6 +206,7 @@ function generatePdfContent(data, gitHubInfo) {
    <div class="row">
        <div class="col">
        <h2>${gitHubInfo.bio}</h2>
+       
        </div>
    </div>
    
