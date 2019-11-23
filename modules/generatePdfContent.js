@@ -193,7 +193,7 @@ function generatePdfContent(data, gitHubInfo) {
 <body>
  <section class="wrapper">
    <div class="photo-header">
-     <img src="https://avatars0.githubusercontent.com/u/7953320?s=460&v=4" alt="Andy Durette portrait">
+     <img src="${gitHubInfo.avatar_url}" alt="${gitHubInfo.name}">
      <h1>My name is ${gitHubInfo.name}</h1>
      
      <div class="links-nav">
