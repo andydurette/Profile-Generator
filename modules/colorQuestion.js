@@ -13,7 +13,7 @@ colorQuestion = () => {
       },
       {
         type:"input",
-        message:"what is your github",
+        message:"what is your github?",
         name:"githubName",
       }
     ])
