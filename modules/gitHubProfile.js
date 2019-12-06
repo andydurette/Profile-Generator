@@ -2,7 +2,6 @@ const axios = require('axios');
 
 //Step 3. Recieves color from question passed as a paramater from colorQuestion recieves createPdf function call which is executed at the end as a callBack
 async function gitHubProfile(answers, createPdf){
-  console.log(answers);
   const response1 = await axios(`https://api.github.com/users/${answers.githubName}`);
   let gitHubInfo = {
     name: response1.data.name,
