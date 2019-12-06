@@ -10,6 +10,11 @@ colorQuestion = () => {
         message:"Pick the color your would like to use.",
         name:"color",
         choices: ["green", "blue", "pink","red"]
+      },
+      {
+        type:"input",
+        message:"what is your github",
+        name:"githubName",
       }
     ])
     .then(answers => {

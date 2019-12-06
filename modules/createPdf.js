@@ -6,7 +6,7 @@ const createPdf = async (answers, gitHubInfo) => {
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
   const options = {
-    path: 'pdf/AndyDuretteGithubProfile.pdf',
+    path: `pdf/${gitHubInfo.name} GitHubProfile.pdf`,
     format:'A4'
 };
   // Awaits content from the generatePdfContent
